@@ -7,5 +7,5 @@ server_app.get('/', function(req, res){
     res.end(message);
 });
 
-server_app.listen(8080);
-console.log("Hello World app listening on port 8080");
+server_app.listen(80);
+console.log("Hello World app listening on port 80");
