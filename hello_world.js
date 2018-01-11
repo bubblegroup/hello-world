@@ -9,4 +9,4 @@ server_app.get('/', function(req, res){
 
 port = 80
 server_app.listen(port);
-console.log("Hello World app listening on port #{port}");
+console.log("Hello World app listening on port " + String(port));
