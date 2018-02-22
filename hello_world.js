@@ -9,7 +9,13 @@ var port = 8080;
 
 var server_app = express();
 server_app.get('/', function(req, res){
-    res.end(message);
+	var obj = {
+		"headers": req.headers,
+		"body": req.body
+	}
+	var msg = "Received at " + String(Date.now()) + "\n" + JSON.stringify(obj, null, 4);
+	console.log(msg);
+	res.end(message);
 });
 
 server_app.listen(port);
