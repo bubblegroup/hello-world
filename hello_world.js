@@ -18,5 +18,10 @@ server_app.get('/', function(req, res){
 	res.end(message);
 });
 
+server_app.get('/monitor', function(req, res){
+	res.statusCode = 200
+	res.end('Okay!')
+})
+
 server_app.listen(port);
 console.log("Hello World app listening on port " + String(port));
