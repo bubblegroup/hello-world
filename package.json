@@ -1,0 +1,29 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A simple web server for testing purposes",
+  "main": "hello_world.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubblegroup/hello-world.git"
+  },
+  "author": "nickhil-sethi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bubblegroup/hello-world/issues"
+  },
+  "homepage": "https://github.com/bubblegroup/hello-world#readme"
+}

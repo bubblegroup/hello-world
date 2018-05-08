@@ -25,7 +25,7 @@ server_app.get('/monitor', function(req, res){
 	res.end('Okay!')
 })
 
-if (require.module === 'main'){
+if (require.main === module){
 	server_app.listen(port);
 	console.log("Hello World app listening on port " + String(port));	
 }
