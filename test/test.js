@@ -1,5 +1,7 @@
 const assert = require('assert')
 const request = require('request')
+
+// TODO : this should probably run the hello world module as a subprocess for realism
 const server = require('../hello_world').server
 
 server.listen(8080)
