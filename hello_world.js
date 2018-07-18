@@ -4,7 +4,7 @@
 */
 
 express = require('express')
-var message = "Hello World! You've reached version 3 of the app.\n";
+var message = "Hello World! You've reached version 4 of the app.\n";
 var port = 8080;
 
 var server_app = express();
