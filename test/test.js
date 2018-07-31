@@ -21,7 +21,7 @@ describe('/', function(){
 		})
 	})
 
-	it('returns body hello world!', function(done){
+	it('returns body Hello World!', function(done){
 		request.get(url, function(err, response, body){
 			if (err){
 				throw err
