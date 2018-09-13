@@ -15,7 +15,7 @@
     "mocha": "^5.1.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha --exit"
   },
   "repository": {
     "type": "git",
