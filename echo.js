@@ -6,7 +6,7 @@ express = require('express')
 var port = 8080;
 
 var echo = express();
-echo.use('/', function(req, res){
+echo.post('/', function(req, res){
 	var obj = {
 		"method": req.method,
 		"headers": req.headers,
