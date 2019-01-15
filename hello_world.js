@@ -14,11 +14,14 @@ server_app.get('/', function(req, res){
 	res.end(message);
 });
 
+server_app.post('/echo', function(req, res){
+	res.end(req.body)
+});
+
 server_app.get('/monitor', function(req, res){
 	res.statusCode = 200
 	res.end('Okay!')
 })
-
 
 if (require.main === module){
 	server_app.listen(port);
