@@ -16,9 +16,9 @@ server_app.get('/', function(req, res){
 });
 
 server_app.get('/matrix/multiply', function(req, res){
-	const c = [[2, 0, 7], [-1, 3, 1], [5, 5, 2]]               // Array
-	const d = math.matrix([[7, 1, 2], [-2, 3, 1], [5,6,2]])  // Matrix
-	const e = math.multiply(c, d)                       // Matrix, [[14, 2], [-13, 8]]
+	const c = math.matrix([[2, 0, 7], [-1, 3, 1], [5, 5, 2]])   
+	const d = math.matrix([[7, 1, 2], [-2, 3, 1], [5, 6, 2]])  
+	const e = math.multiply(c, d)
 	res.end(String(e))
 })
 
