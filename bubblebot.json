@@ -1,0 +1,25 @@
+{
+    "ami_version":"6a88814e039e101a8070b6ecb7c450f5b8a336a9",
+    "ami_build_size": "t2.small",
+    "build_ami": "cd lifecycle_scripts && sudo python build_ami.py",
+    "credential_set": "bubble_environment",
+    "default_size_prod": "c4.large",
+    "default_size_dev": "t2.small",
+    "install": "cd lifecycle_scripts && sudo python install.py",
+    "monitor": {
+        "endpoint": {
+            "command": "curl localhost:8080/monitor",
+            "expected": "{\"message\":\"Okay!\"}"
+        }
+    },
+    "restart": "supervisorctl restart all",
+    "termination_delay": 300000,
+    "tests":{},
+    "verify": {
+        "command": "cd lifecycle_scripts && coffee verify.coffee",
+        "expected": "verification complete",
+        "retries": 30,
+        "retry_interval": 15000
+    }
+
+}
