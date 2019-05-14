@@ -1,5 +1,5 @@
 {
-    "ami_version":"6a88814e039e101a8070b6ecb7c450f5b8a336a9",
+    "ami_version":"9c8e29eef2ba4087c8c9897e992a17574fd77019",
     "ami_build_size": "t2.small",
     "build_ami": "cd lifecycle_scripts && sudo python build_ami.py",
     "credential_set": "bubble_environment",
