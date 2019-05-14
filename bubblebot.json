@@ -9,7 +9,7 @@
     "monitor": {
         "endpoint": {
             "command": "curl localhost:8080/monitor",
-            "expected": "{\"message\":\"Okay!\"}"
+            "expected": "Okay!"
         }
     },
     "restart": "supervisorctl restart all",
