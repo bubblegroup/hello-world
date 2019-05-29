@@ -1,5 +1,5 @@
 /*
-	A simple hello world server used for testing purposes. 
+	A simple hello world server used for testing purposes.
 	Listens on a prespecified port and ends any incoming get request with Hello World
 */
 
@@ -16,11 +16,11 @@ server_app.get('/', function(req, res){
 
 server_app.get('/monitor', function(req, res){
 	res.statusCode = 200
-	res.end('Okay!')
+	res.end(' Okay!')
 })
 
 if (require.main === module){
 	server_app.listen(port);
-	console.log("Hello World app listening on port " + String(port));	
+	console.log("Hello World app listening on port " + String(port));
 }
 
