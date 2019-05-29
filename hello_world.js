@@ -16,7 +16,7 @@ server_app.get('/', function(req, res){
 
 server_app.get('/monitor', function(req, res){
 	res.statusCode = 200
-	res.end(' Okay!')
+	res.end('Okay!')
 })
 
 if (require.main === module){
