@@ -16,11 +16,12 @@ server_app.get('/', function(req, res){
 
 server_app.get('/monitor', function(req, res){
 	res.statusCode = 200
-	res.end('Ok ay!')
+	res.end('Okay!')
 })
 
 if (require.main === module){
 	server_app.listen(port);
+
 	console.log("Hello World app listening on port " + String(port));
 }
 
