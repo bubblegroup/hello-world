@@ -19,7 +19,6 @@ server_app.get('/monitor', function(req, res){
 	res.end('Okay!')
 })
 
-// Hello World! ++
 if (require.main === module){
 	server_app.listen(port);
 
