@@ -2,9 +2,6 @@
   "ami_version": "9c8e29eef2ba4087c8c9897e992a17574fd77019",
   "ami_build_size": "t2.small",
   "build_ami": "cd lifecycle_scripts && sudo python build_ami.py",
-  "ami": {
-    "linux_version": 2
-  },
   "credential_set": "bubble_environment",
   "default_size_prod": "c4.large",
   "default_size_dev": "t2.small",
