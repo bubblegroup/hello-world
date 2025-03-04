@@ -33,6 +33,7 @@ if __name__ == '__main__':
     sys_call('coffee -c ..')
     
     # Install supervisor
+    sys_call('python -m pip install --upgrade pip') 
     print 'Installing & configuring supervisor...'
     sys_call('sudo pip install supervisor==3.1', failokay=True)
     sys_call('sudo ln -s /usr/local/bin/supervisord /usr/bin/supervisord', failokay=True)
